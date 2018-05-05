@@ -71,8 +71,8 @@
             "index": "honos",
             "userapp_calculation_id": "honos_ua_calc",
             "userapp_id": "org.optinomic.export.toolbox.v2.suedhang"
-        });        
-          
+        });
+
         _array_source.push({
             "name": "Soziale Kompetenzen (ISK)",
             "index": "isk",
@@ -133,20 +133,20 @@
       // ------------------------------------------------------------- Inculde Export-File Definitons Create Array of all Export-File Definitons Add NEW Files here!
 
       var export_files = [];
-      export_files.push(__opapp_include(../../org.optinomic.export.toolbox/definitions/aase.json));
-      export_files.push(__opapp_include(../../org.optinomic.export.toolbox/definitions/asrs.json));
-      export_files.push(__opapp_include(../../org.optinomic.export.toolbox/definitions/bdi.json));
-      export_files.push(__opapp_include(../../org.optinomic.export.toolbox/definitions/bscl_anq.json));
-      export_files.push(__opapp_include(../../org.optinomic.export.toolbox/definitions/bscl_intra.json));
-      export_files.push(__opapp_include(../../org.optinomic.export.toolbox/definitions/bscl.json));
-      export_files.push(__opapp_include(../../org.optinomic.export.toolbox/definitions/case.json));
-      export_files.push(__opapp_include(../../org.optinomic.export.toolbox/definitions/honos.json));
-      export_files.push(__opapp_include(../../org.optinomic.export.toolbox/definitions/isk.json));
-      export_files.push(__opapp_include(../../org.optinomic.export.toolbox/definitions/sci.json));
-      export_files.push(__opapp_include(../../org.optinomic.export.toolbox/definitions/sci_2017.json));
-      export_files.push(__opapp_include(../../org.optinomic.export.toolbox/definitions/tmt.json));
-      export_files.push(__opapp_include(../../org.optinomic.export.toolbox/definitions/whoqol.json));
-      export_files.push(__opapp_include(../../org.optinomic.export.toolbox/definitions/zuepaz.json));
+      export_files.push(__opapp_include(../org.optinomic.export.toolbox/definitions/aase.json));
+      export_files.push(__opapp_include(../org.optinomic.export.toolbox/definitions/asrs.json));
+      export_files.push(__opapp_include(../org.optinomic.export.toolbox/definitions/bdi.json));
+      export_files.push(__opapp_include(../org.optinomic.export.toolbox/definitions/bscl_anq.json));
+      export_files.push(__opapp_include(../org.optinomic.export.toolbox/definitions/bscl_intra.json));
+      export_files.push(__opapp_include(../org.optinomic.export.toolbox/definitions/bscl.json));
+      export_files.push(__opapp_include(../org.optinomic.export.toolbox/definitions/case.json));
+      export_files.push(__opapp_include(../org.optinomic.export.toolbox/definitions/honos.json));
+      export_files.push(__opapp_include(../org.optinomic.export.toolbox/definitions/isk.json));
+      export_files.push(__opapp_include(../org.optinomic.export.toolbox/definitions/sci.json));
+      export_files.push(__opapp_include(../org.optinomic.export.toolbox/definitions/sci_2017.json));
+      export_files.push(__opapp_include(../org.optinomic.export.toolbox/definitions/tmt.json));
+      export_files.push(__opapp_include(../org.optinomic.export.toolbox/definitions/whoqol.json));
+      export_files.push(__opapp_include(../org.optinomic.export.toolbox/definitions/zuepaz.json));
 
       // Find Sources Index and enhance options!
       export_files.forEach(function (f, fID) {
@@ -158,10 +158,10 @@
       });
 
       var d = {};
-      d.default_patient = __opapp_include(../../org.optinomic.export.toolbox/definitions/_default_patient.js);
-      d.default_stay = __opapp_include(../../org.optinomic.export.toolbox/definitions/_default_stay.js);
-      d.default_optinomic_fields = __opapp_include(../../org.optinomic.export.toolbox/definitions/_optinomic_ids.js);
-      
+      d.default_patient = __opapp_include(../org.optinomic.export.toolbox/definitions/_default_patient.js);
+      d.default_stay = __opapp_include(../org.optinomic.export.toolbox/definitions/_default_stay.js);
+      d.default_optinomic_fields = __opapp_include(../org.optinomic.export.toolbox/definitions/_optinomic_ids.js);
+
 
       function compare(a, b) {
         if (a.options.name < b.options.name)
